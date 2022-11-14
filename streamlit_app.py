@@ -1,6 +1,8 @@
 import streamlit
 import pandas
 
+#Streamlit app: https://rebeccamoen-snowflake-dabw-streamlit-app-12ho64.streamlit.app
+  
 streamlit.title("My Mom's New Healthy Diner")
 
 streamlit.header('Breakfast Favorites')
