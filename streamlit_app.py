@@ -51,6 +51,7 @@ except URLError as e:
 # Query the Account Metadata / Data from Snowflake
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 #streamlit.text("Hello from Snowflake:")
+
 streamlit.header("View our Fruit List")
 
 # Snowflake-related functions
@@ -80,6 +81,3 @@ if streamlit.button('Add a Fruit to the List'):
   back_from_function = insert_row_snowflake(add_my_fruit)
   my_cnx.close()
   streamlit.text(back_from_function)
-
-#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
-
