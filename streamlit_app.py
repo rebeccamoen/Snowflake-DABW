@@ -38,7 +38,7 @@ try:
       streamlit.dataframe(fruityvice_normalized)
 
 # Don't run anything past here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 
 # Query the Account Metadata / Data from Snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
@@ -57,4 +57,4 @@ streamlit.write('Thanks for adding ', add_my_fruit)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
 
 # Testing
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
