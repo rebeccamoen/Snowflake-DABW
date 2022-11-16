@@ -1,6 +1,7 @@
 import streamlit
 import pandas
 import requests
+import snowflake.connector
 
 # Streamlit app: https://rebeccamoen-snowflake-dabw-streamlit-app-12ho64.streamlit.app
   
